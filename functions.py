@@ -18,3 +18,14 @@ def ellipsoid_surface_area(a, b, c):
     k2      = round(k2, 8)
 
     return 2 * np.pi * c**2  + 2 * np.pi * a * b / np.sin(phi) * (ellipkinc(phi,k2) * cosphi2 + ellipeinc(phi,k2) * sinphi2)
+
+
+
+# Function to extract and calculate the difference for one column
+def extract_and_calculate(entry):
+    if isinstance(entry, str) and '-' in entry:
+        # If the entry is a string and contains a hyphen
+        a, b = map(int, entry.split('-'))
+        return abs(a - b)
+    else:
+        return entry
