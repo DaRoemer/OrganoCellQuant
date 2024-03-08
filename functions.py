@@ -26,6 +26,6 @@ def calculate_difference(entry):
     if isinstance(entry, str) and '-' in entry:
         # If the entry is a string and contains a hyphen
         a, b = map(int, entry.split('-'))
-        return abs(a - b)
+        return abs(a - b) + 1
     else:
         return entry
