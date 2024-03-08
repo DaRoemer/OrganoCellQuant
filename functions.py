@@ -22,7 +22,7 @@ def ellipsoid_surface_area(a, b, c):
 
 
 # Function to extract and calculate the difference for one column
-def extract_and_calculate(entry):
+def calculate_difference(entry):
     if isinstance(entry, str) and '-' in entry:
         # If the entry is a string and contains a hyphen
         a, b = map(int, entry.split('-'))
