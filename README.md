@@ -7,7 +7,7 @@ This workflow will be used to analyze cell counts extracted from spinning disk -
 A IDE to display jupiter notebooks (such as [VSC](https://code.visualstudio.com)) or an online solution, is needed. Required packages can be installed with conda:
 
 ```ruby
-conda env create -f OrganoCellQuantEnv.yml
+conda env create -f OrganoidAnalysisEnv.yml
 ```
 
 ## How to use
